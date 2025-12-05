@@ -6,6 +6,7 @@ import { ui, hideResults} from "./ui.js";
 import { saveEntries, generateUniqueId, loadEntries, clearAllEntries} from "./data-store.js";
 import { renderTable} from "./table-renderer.js";
 import { loadAndDisplayAqi } from "./aqi-integrator.js";
+import { loadAndDisplayWeather } from "./weather-integrator.js";
 
 // Holds all enries in memory by declaring a 'const' array
 const homeworkEntries = []; 
@@ -217,6 +218,7 @@ const init = () => {
     onEdit: handleEditEntry
   });
   loadAndDisplayAqi();
+  loadAndDisplayWeather();
   clearAllDataButton.addEventListener('click', (event) => {
     event.stopPropagation();
     if(isConfirmingClearAll) {

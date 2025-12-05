@@ -22,6 +22,14 @@
       <p class="note aqi-status" id="aqiStatusMessage"></p>
       <button id="refreshAqiButton" class="aqi-button">Refresh AQI</button>
     </section>
+    <section id="weather-display" class="weather-card" style="display: none;">
+      <h2>Local Weather</h2>
+      <p>
+        Current Temp: <span id="currentTemp">--</span> °F,
+        Condition: <span id="weatherCondition">--</span>
+      </p>
+      <button id="refreshWeatherButton" class="weather-button">Refresh Weather</button>
+    </section>
 
     <form id="homeworkForm" novalidate>
       <input type="hidden" id="entryId" />
