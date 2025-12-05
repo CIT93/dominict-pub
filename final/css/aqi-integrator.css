@@ -1,0 +1,109 @@
+.aqi-card {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #A9C9D1;
+    border-radius: 8px;
+    background-color: #F5F3EF;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.aqi-heading {
+    color: #8AA899;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+
+.aqi-info-row {
+    font-size: 1.1em;
+    color: #2C2C2C;
+    margin-bottom: 10px;
+}
+
+.aqi-value {
+    font-weight: bold;
+    color: #8AA899;
+    font-size: 1.2em;
+}
+
+.aqi-location {
+    font-style: italic;
+    color: #555;
+}
+
+.aqi-date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.aqi-status {
+    color: #B8A89F;
+    font-weight: bold;
+    margin-top: 15px;
+    min-height: 1.2em;
+}
+
+.aqi-button {
+    background-color: #8AA899;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.aqi-button:hover {
+    background-color: #6f8a7d;
+    transform: translateY(-2px);
+}
+
+.aqi-button:active {
+    background-color: #5a7267;
+    transform: translateY(0);
+}
+
+.text-green-600 {
+    color: #8AA899;
+}
+
+.text-yellow-600 {
+    color: #B8A89F;
+}
+
+.text-orange-600 {
+    color: #A08C7F;
+}
+
+.text-red-600 {
+    color: #dc3545;
+}
+
+.text-purple-600 {
+    color: #A9C9D1;
+}
+
+.text-gray-500 {
+    color: #6b7280;
+}
+
+@media (max-width: 768px) {
+    .aqi-card {
+        padding: 15px;
+    }
+    .aqi-heading {
+        font-size: 1.4em;
+    }
+    .aqi-info-row {
+        font-size: 1em;
+    }
+    .aqi-value {
+        font-size: 1.1em;
+    }
+    .aqi-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
